@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text/File Encoder & Decoder</title>
+    <link rel="stylesheet" href="text.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Text/File Encoder & Decoder</h2>
+        <label for="inputType">Choose Input Type:</label>
+        <select id="inputType" onchange="toggleInput()">
+            <option value="text">Text</option>
+            <option value="file">File</option>
+        </select>
+        <br><br>
+        
+        <div id="textInputSection">
+            <textarea id="textInput" rows="4" cols="50" placeholder="Enter text here..."></textarea>
+        </div>
+        
+        <div id="fileInputSection" class="hidden">
+            <input type="file" id="fileInput">
+        </div>
+        <br>
+        <label for="key">Enter Shift Key (Number):</label>
+        <input type="number" id="key">
+        <br><br>
+        <button onclick="encode()">Encode</button>
+        <button onclick="decode()">Decode</button>
+        <br><br>
+        <h3>Output:</h3>
+        <textarea id="output" rows="4" cols="50" readonly></textarea>
+        <br>
+        <button id="downloadBtn" class="hidden" onclick="downloadFile()">Download Encrypted File</button>
+    </div>
+    <script src="text.js"></script>
+</body>
+</html>

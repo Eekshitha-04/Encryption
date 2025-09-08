@@ -1,0 +1,31 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('text.jpg') no-repeat center center/cover;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: aliceblue;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            height: 400px;
+            width: 450px;
+            margin: 0;
+            border: 2px solid black;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            height: 30px;
+            width: 150px;
+        }
+        .hidden {
+            display: none;
+        }

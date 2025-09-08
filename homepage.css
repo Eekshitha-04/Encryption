@@ -1,0 +1,29 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('homepage.png') no-repeat center center/cover;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            height: 30px;
+            width: 150px;
+        }
+        .box{
+            align-content: center;
+            align-items: center;
+            width: 600px;
+            height: 150px;
+        }
+        h1{
+            color: aliceblue;
+            text-align: center;
+            text-emphasis: 20px;
+
+        }
